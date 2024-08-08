@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #EAEAEA;
+    width:100%;
+    height: 100vh;
+}
+.main-heading{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+span{
+    color:#FF2E63;
+}
+.center-container{
+    background-color: white;
+    width:70%;
+    height: 700px;
+    margin-left: 210px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 5px 1px #252A34;
+
+}
+.add-task{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 20px;
+    padding-right: 50px;
+
+}
+.add-task img{
+    width: 40px;
+    margin-right:20px;
+}
+.add-task h1{
+    margin-right: 10px;
+    text-shadow:#FF2E63 1px 0 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap:20px;
+    margin-left: 76px;
+}
+.grid-item{
+    width:250px;
+    height: 250px;
+    background-color:  #08D9D6;
+    margin-top:30px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 2px 2px 2px 1px #FF2E63;
+    transition: width 2s, height 2s, transform 2s;;
+                
+}
+.grid-item h1{
+    color: #252A34;
+
+}
+.grid-item input{
+    margin-top: 10px;
+    color: #FF2E63;
+    margin-right: 5px;
+}
+.strike-through{
+    text-decoration: line-through;
+    color: #252A34;
+}
+
+.grid-item:hover{
+    width: 280px;
+    height: 280px;
+    transform:rotate(-20deg) ;
+    box-shadow:2px 2px 2px 1px  #252A34;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #08D9D6  #252A34  #FF2E63  #EAEAEA */
